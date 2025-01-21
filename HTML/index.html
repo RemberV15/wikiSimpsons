@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <title>Wiki Simpsons</title>
     </head>
     <body>
+
+        <button id="toggle_btn" class="open_btn" onclick="toggleSidebar()">☰</button>
+
+        <div id="sidebar" class="sidebar">
+            <a href="index.html">Inicio</a>
+            <a href="personajes.html">Personajes</a>
+            <a href="informacion.html">Info</a>
+        </div>
+        <div id="overlay" class="overlay"></div>
         <header>
-            <h1>¡Bienvenido a la wiki de los <strong>Simpsons</strong>!</h1>
+            <h1>¡Bienvenido a la wiki de Los Simpsons!</h1>
         </header>
+        <!-- Contenido principal -->
         <main>
             <img src="imagenes/The_Simpsons_yellow_logo.png" alt="Los Simpsons imagen logo" width="300" height="200"/>
             <h2>Inicios: El nacimiento de una revolución animada</h2>
@@ -16,8 +27,10 @@
                 Los personajes principales, Homero, Marge, Bart, Lisa y Maggie, fueron diseñados de manera simple para facilitar la animación. Los nombres de los adultos provienen de los propios padres de Matt, mientras que Bart es un anagrama de "brat" (mocoso). Con líneas gruesas y proporciones caricaturescas, la familia debutó el 19 de abril de 1987 con un corto titulado: Good Night.
                 Desde el primer momento, las aventuras breves de estos personajes capturaron la atención del público; su mezcla de humor irreverente y situaciones cotidianas resonó con la audiencia. Debido al éxito de los cortos, en 1989 Fox apostó por convertirlos en una serie independiente. El 17 de diciembre de 1989, se estrenó el primer episodio completo: Simpsons Roasting on an Open Fire (Sin blanca Navidad en Hispanoamérica).
                 El episodio inicial presentó a la familia en una situación muy relatable: la lucha por conseguir regalos de Navidad cuando el dinero escasea. Homero, en su típico estilo torpe y bien intencionado, intenta salvar las fiestas trabajando como Santa Claus en un centro comercial. Aunque las cosas no salen como esperaba, la familia termina unida, adoptando a Ayudante de Santa, su icónico perro, y demostrando que lo importante no son los regalos, sino estar juntos.
-                Desde ese día, Los Simpson no solo redefinieron la televisión animada, sino que se convirtieron en un fenómeno cultural que ha perdurado por generaciones.</p>
-
+                Desde ese día, Los Simpson no solo redefinieron la televisión animada, sino que se convirtieron en un fenómeno cultural que ha perdurado por generaciones.</p>    
         </main>
+
+        <!-- Archivo de javaScript -->
+        <script src="scripts.js"></script>
     </body>
 </html>

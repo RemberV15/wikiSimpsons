@@ -33,3 +33,61 @@ p{
     text-align: justify;
     font-size: 16px;
 }
+
+/*Barra lateral*/
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fbc02d;
+    overflow-x: #fbc02d;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidebar a{
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover{
+    background-color: #00796b;
+    color: white;
+}
+
+.open_btn{
+    font-size: 20px;
+    position: fixed; /*fixed para que se mantenga visible*/
+    top: 10px;
+    left: 10px; /*Siempre aparece a la izquierda*/
+    background-color: #fbc02d;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000; /*Asegura que este encima de otro elemto*/
+    transition: 0.3s;
+}
+
+.open_btn:hover{
+    background-color: #00796b;
+    color: white;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /*Oscurece el fondo*/
+    z-index: 999; /*Asegurarse que este justo debajo del botón*/
+    display: none; /*Oculto por defecto*/
+    transition: 0.3s ease-in-out; /*animación de aparición*/
+}
